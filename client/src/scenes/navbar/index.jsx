@@ -56,7 +56,7 @@ const Navbar = () => {
             },
           }}
         >
-          Blade
+          SocialMedia
         </Typography>
         {isNonMobileScreens && (
           <FlexBetween
