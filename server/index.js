@@ -18,6 +18,7 @@ import User from "./models/User.js";
 import Post from "./models/Post.js";
 import { users, posts } from "./data/index.js";
 
+
 /* CONFIGURATIONS */
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -51,6 +52,10 @@ app.post("/posts", verifyToken, upload.single("picture"), createPost);
 app.use("/auth", authRoutes);
 app.use("/users", userRoutes);
 app.use("/posts", postRoutes);
+
+app.get("/", (req, res) => {
+  res.send("Hello, world!"); 
+});
 
 /* MONGOOSE SETUP */
 const PORT = process.env.PORT || 6001;
