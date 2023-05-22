@@ -8,7 +8,7 @@ const UserImage = ({ image, size = "60px" }) => {
         width={size}
         height={size}
         alt="user"
-        src={`https://smserver-epek.onrender.com/assets/${image}`}
+        src={`https://noderoot.onrender.com/assets/${image}`}
       />
     </Box>
   );
