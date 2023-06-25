@@ -83,7 +83,11 @@ const Navbar = () => {
               <LightMode sx={{ color: dark, fontSize: "25px" }} />
             )}
           </IconButton>
-          <Message sx={{ fontSize: "25px" }} />
+          <a href="https://blade-text.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <IconButton>
+              <Message sx={{ fontSize: "25px" }} />
+            </IconButton>
+          </a>
           <Notifications sx={{ fontSize: "25px" }} />
           <Help sx={{ fontSize: "25px" }} />
           <FormControl variant="standard" value={fullName}>
@@ -158,7 +162,11 @@ const Navbar = () => {
                 <LightMode sx={{ color: dark, fontSize: "25px" }} />
               )}
             </IconButton>
-            <Message sx={{ fontSize: "25px" }} />
+            <a href="https://blade-text.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <IconButton>
+                <Message sx={{ fontSize: "25px" }} />
+              </IconButton>
+            </a>
             <Notifications sx={{ fontSize: "25px" }} />
             <Help sx={{ fontSize: "25px" }} />
             <FormControl variant="standard" value={fullName}>
